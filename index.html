@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,24 +16,33 @@
         .dashboard {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
             gap: 20px;
         }
         .site {
             text-align: center;
+            transition: transform 0.3s ease;
         }
         .site img {
             width: 100px;
             height: 100px;
+            transition: transform 0.3s ease;
+        }
+        .site:hover img {
+            transform: scale(1.2);
+        }
+        .site:hover {
+            transform: translateY(-10px);
         }
     </style>
 </head>
 <body>
     <div class="dashboard">
         <div class="site">
-            <a href="https://calendar.google.com/calendar/u/0/r/day?pli=1">
-                <img src="calendar.png" alt="calendar">
+            <a href="https://calendar.google.com/calendar/u/0/r/tasks">
+                <img src="calendar.png" alt="Logo Site 1">
             </a>
-            <p>Google Calendário</p>
+            <p>Site 1</p>
         </div>
         <div class="site">
             <a href="https://www.site2.com">
@@ -45,6 +55,19 @@
                 <img src="logo3.png" alt="Logo Site 3">
             </a>
             <p>Site 3</p>
+        </div>
+        <!-- Adicione mais sites para completar as 5 linhas -->
+        <div class="site">
+            <a href="https://www.site4.com">
+                <img src="logo4.png" alt="Logo Site 4">
+            </a>
+            <p>Site 4</p>
+        </div>
+        <div class="site">
+            <a href="https://www.site5.com">
+                <img src="logo5.png" alt="Logo Site 5">
+            </a>
+            <p>Site 5</p>
         </div>
     </div>
 </body>
