@@ -11,7 +11,6 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
-            padding-top: 20px; /* Adiciona espaço no topo */
         }
         /* Estilo do texto de "máquina de escrever" */
         .typewriter {
@@ -21,12 +20,13 @@
             white-space: nowrap;
             overflow: hidden;
             width: 0;
-            animation: typing 3s steps(12) forwards, blink 0.7s infinite step-end alternate;
+            animation: typing 2s steps(9) forwards, blink 0.7s infinite step-end alternate;
+            margin-bottom: 40px; /* Espaço entre o cabeçalho e a dashboard */
         }
 
         @keyframes typing {
             from { width: 0; }
-            to { width: 150px; } /* Ajuste o valor conforme o tamanho do texto */
+            to { width: 9ch; } /* Ajusta para o número de caracteres no texto */
         }
 
         @keyframes blink {
@@ -39,7 +39,6 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(5, 1fr);
             gap: 20px;
-            margin-top: 30px;
         }
         .site {
             text-align: center;
@@ -60,14 +59,14 @@
 </head>
 <body>
     <!-- Texto com animação de máquina de escrever -->
-    <div class="typewriter">Olá Guto! O que você deseja fazer, meu lindo ;) </div>
+    <div class="typewriter">Olá Guto! O que temos para Hoje, Meu Lindo?</div>
 
     <div class="dashboard">
         <div class="site">
-            <a href="https://calendar.google.com/calendar/u/0/r/tasks">
+            <a href="https://chatgpt.com/">
                 <img src="calendar.png" alt="Logo Site 1">
             </a>
-            <p>Tasks</p>
+            <p>GPT</p>
         </div>
         <div class="site">
             <a href="https://www.site2.com">
